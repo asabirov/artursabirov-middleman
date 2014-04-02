@@ -126,8 +126,7 @@ set :images_dir, 'images'
 # Extensions
 ###
 
-set :markdown_engine, :redcarpet
-set :markdown, :fenced_code_blocks => true, :smartypants => true
+set :markdown_engine, :kramdown
 
 activate :autoprefixer
 activate :directory_indexes

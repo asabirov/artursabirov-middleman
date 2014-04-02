@@ -7,7 +7,7 @@ gem "middleman-blog"
 gem "middleman-syntax"
 gem "middleman-alias"
 
-gem "redcarpet"
+gem "kramdown"
 gem "middleman-autoprefixer"
 gem "russian", :git => "git://github.com/Undev/russian.git"
 
