@@ -13,8 +13,6 @@ gem "middleman-autoprefixer"
 gem "russian", :git => "git://github.com/Undev/russian.git"
 
 gem 'capistrano', '~> 3'
-gem 'capistrano-bundler'
 gem 'capistrano-rvm'
 gem 'capistrano-nc'
 gem 'capistrano-composer'
-#gem 'railsless-deploy'

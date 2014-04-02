@@ -19,9 +19,6 @@ GEM
       i18n
       rake (>= 10.0.0)
       sshkit (~> 1.3)
-    capistrano-bundler (1.1.1)
-      capistrano (~> 3.0)
-      sshkit (>= 1.2.0)
     capistrano-composer (0.0.3)
       capistrano (>= 3.0.0.pre)
     capistrano-nc (0.1.2)
@@ -154,7 +151,6 @@ PLATFORMS
 DEPENDENCIES
   builder (~> 3.0)
   capistrano (~> 3)
-  capistrano-bundler
   capistrano-composer
   capistrano-nc
   capistrano-rvm

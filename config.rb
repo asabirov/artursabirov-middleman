@@ -147,5 +147,7 @@ configure :build do
   ignore "page.html.haml"
   ignore "layout.html.haml"
   ignore "book_review.html.haml"
+
+  #redirect "/essays/index.html", :to => "/journal/tags/essays"
 end
 
