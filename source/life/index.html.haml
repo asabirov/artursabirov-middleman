@@ -4,4 +4,7 @@ blog: life
 ---
 
 
-= partial "shared/articles_list"
+%h1 Работа, жизнь и остальное
+
+= partial "shared/articles_list", locals: {articles: page_articles, comments: true}
+= partial "shared/pagination"

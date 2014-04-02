@@ -4,4 +4,6 @@ per_page: 50
 ---
 
 
-= partial "shared/articles_list"
+= partial "shared/articles_list", locals: {articles: page_articles, comments: true}
+= partial "shared/pagination"
+
