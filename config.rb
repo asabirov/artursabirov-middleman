@@ -104,7 +104,7 @@ helpers do
   end
 
   def current_feed_path
-    "#{blog.options.prefix.to_s}/feed.xml"
+    "http://feeds.feedburner.com/artursabirov/#{blog.options.prefix.to_s}"
   rescue RuntimeError
     "http://feeds.feedburner.com/artursabirov"
   end
