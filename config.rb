@@ -33,19 +33,25 @@ activate :blog do |blog|
   blog.permalink = "{alias}.html"
 
   blog.tag_template = "tag.html"
+end
+
+activate :blog do |blog|
+  blog.name = "life"
+  blog.prefix = "life"
+  blog.layout = "article"
+
+  blog.permalink = "{year}/{month}/{day}/{alias}.html"
+
+  blog.tag_template = "tag.html"
   blog.calendar_template = "calendar.html"
 end
 
-
 page "/feed.xml", layout: false
+
 
 ##
 # Page options, layouts, aliases and proxies
 ##
-
-with_layout :tag do
-  page "/dev/tags/*"
-end
 
 with_layout false do
   page "/*/feed.xml"
