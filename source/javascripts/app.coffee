@@ -1,5 +1,4 @@
-$('.books-list').masonry(
-  columnWidth: 100,
+$('.books-list').masonry
+  columnWidth: 100
   gutter: 5
   itemSelector: '.book'
-);
