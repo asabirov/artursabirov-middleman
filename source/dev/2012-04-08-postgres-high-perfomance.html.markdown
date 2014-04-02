@@ -51,10 +51,9 @@ GiST — для полнотекстового поиска. Быстрый по
 
 При поиске с использованием LIKE или POSIX задать специальный параметр: 
 
-```sql
+~~~sql
 CREATE INDEX index_name ON table_name(column_name varchar_pattern_ops);
-```
-
+~~~
 Для других типов: text_pattern_ops, bpchar_pattern_ops, name_pattern_ops.
 
 
@@ -62,31 +61,31 @@ CREATE INDEX index_name ON table_name(column_name varchar_pattern_ops);
 
 При поиске по по двум и более колонкам можно использовать составной индекс:
 
-```sql
+~~~sql
 CREATE INDEX index_name ON table_name(col_1, col_2);
-```
+~~~
 
 ### Частичный индекс
 
 В случае, если поиск совершается только по какому-то одному значению:
 
-```sql
+~~~sql
 CREATE INDEX index_name ON table name WHERE column_name IS value;
-```
+~~~
 
 ### Сортировка индексов
 
 При сортировке по индексу в одну сторону, например DESC, можно настроить и сам индекс:
 
-```sql
+~~~sql
 CREATE INDEX index_name ON  table_name(column_name DESC);
- ```
+~~~
 
 Если имеются значения NULL, можно подвинуть их в начало:
 
-```sql
+~~~sql
 CREATE INDEX index_name ON  table_name(column_name NULLS FIRST);
-```
+~~~
 
 По умолчанию значения NULL хранятся в конце.
 
@@ -95,49 +94,47 @@ CREATE INDEX index_name ON  table_name(column_name NULLS FIRST);
 
 Если в запросах используются функции:
 
-```sql
+~~~sql
 SELECT * FROM table_name WHERE lower(column_name) = 'x';
-```
+~~~
 
 Можно подготовить значения и в самом индексе:
 
-```sql
+~~~sql
 CREATE INDEX index_name ON table_name(lower(column_name)); 
-```
+~~~
 
 ### OFFSET 0
 
 Использование «OFFSET 0» ускорит выполнение вложенных запросов:
 
-```sql
+~~~sql
 SELECT l.prod_id FROM orderlines l
 WHERE EXISTS (SELECT * FROM customers JOIN orders USING (customerid) WHERE orders.orderid = l.orderid OFFSET 0)
 AND l.orderdate='2004-12-01';
-
-```
+~~~
 
 ### Ускорение SELECT count(*) 
 
 В PostgreSQL, в отличии от других БД, медленный подсчет строк.
 
-```sql
+~~~sql
 SELECT count(*)  FROM t;
-```
+~~~
 
 Его можно ускорить, добавив какое-нибудь условие WHERE:
 
-```sql
+~~~sql
 SELECT count(*) FROM t WHERE k>10 and k<20;
-```
+~~~
 
 ### FOREIGN KEYS
 
 Добавление и изменение большого количества данных может оказаться медленным из-за использования внешних ключей (FOREIGN KEYS). Поэтому их можно  приглушить до окончания операции:
 
-```sql
+~~~sql
 BEGIN;
 SET CONSTRAINTS ALL DEFERRED;
 [update or insert statements]
 COMMIT;
-
-```
+~~~

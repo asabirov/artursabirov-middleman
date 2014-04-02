@@ -10,52 +10,52 @@ date: 2011-08-29
 
 ### Установка
 
-```bash
+~~~bash
 gem install foreman
-```
+~~~
 
 Создаем конфиг Procfile, в котором прописываем все процессы для запуска.
 
 
-```
+~~~
 spork: spork
 thin: bundle exec rails s thin -p 3003
 faye: bundle exec rackup faye.ru -s thin -E development
 resque_sheduler: bundle exec rake resque:scheduler
 
-```
+~~~
 
 ### Использование
 
 Запуск всех разом
 
-```
+~~~
 foreman start
 
-```
+~~~
 
 Или только необходимые
 
-```
+~~~
 foreman start thin, faye
 
-```
+~~~
 
 ### Автозапуск
 
 Генерация скрипта для inittab:
 
-```
+~~~
 foreman export inittab
 
-```
+~~~
 
 и upstart:
 
-```
+~~~
 foreman export upstart
 
-```
+~~~
 
 
 ### Ссылки

@@ -10,14 +10,14 @@ date: 2011-08-20
 
 Для начала потребуется виртуальный буфер для эмуляции иксов.
 
-```
+~~~
 yum install Xvfb
 
-```
+~~~
 
 Скрипт автозагрузки:
 
-```bash
+~~~bash
 #!/bin/bash
 #
 # /etc/rc.d/init.d/xvfbd
@@ -73,31 +73,31 @@ esac
 
 exit $RETVAL
 
-```
+~~~
 
 Добавим его в автозагрузку и запустим.
 
-```bash
+~~~bash
 chmod +x /etc/init.d/xvfb
 chkconfig xvfb on
 service xvfb start
 
-```
+~~~
 
 Таперь Selenium Server.
 
-```bash
+~~~bash
 mkdir /usr/local/lib/selenium
 cd /usr/local/lib/selenium
 wget http://selenium.googlecode.com/files/selenium-server-standalone-2.4.0.jar
 mkdir -p /var/log/selenium/
 chmod a+w /var/log/selenium/
 
-```
+~~~
 
 /etc/init.d/selenium
 
-```bash
+~~~bash
 #!/bin/bash
 
 case "${1:-''}" in
@@ -152,33 +152,33 @@ case "${1:-''}" in
     ;;
 esac
 
-```
+~~~
 
 Запуск процесса:
 
-```bash
+~~~bash
 chmod +x /etc/init.d/selenium
 chkconfig selenium on
 service selenium start
 
-```
+~~~
 
 Подключение FireFox:
 
-```bash
+~~~bash
 cd /tmp
 wget http://mirror.informatik.uni-mannheim.de/pub/mirrors/mozilla.org/firefox/releases/6.0/linux-i686/en-US/firefox-6.0.tar.bz2
 tar xvf firefox-6.0.tar.bz2
 mv firefox /usr/local/firefox-6.0
 ln -s /usr/local/firefox-6.0/firefox /usr/local/bin/firefox
 
-```
+~~~
 
 ### Результат
 
 Пример скрипта:
 
-```ruby
+~~~ruby
 require 'rubygems'
 gem "selenium-client"
 require "selenium/client"
@@ -193,12 +193,12 @@ require "selenium/client"
 @selenium_driver.capture_entire_page_screenshot(File.expand_path(File.dirname(__FILE__)) + 'screenshot.png', '')
 @selenium_driver.stop
 
-```
+~~~
 
-```bash
+~~~bash
 gem install selenium-client
 ruby test.rb
-```
+~~~
 
 ### Резюме
 

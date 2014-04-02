@@ -19,7 +19,7 @@ date: 2012-01-23
 
 Вставляем и настраиваем путь до jslint (windows):
 
-```javascript
+~~~javascript
 {
    [cmd]()
 ["d:/lib/jsl/jsl.exe", "-process", "$file"],
@@ -27,7 +27,7 @@ date: 2012-01-23
 "source.js"
 }
 
-```
+~~~
 
 Сохраняем файл, жмем CTRL+B и смотрим результат.
 

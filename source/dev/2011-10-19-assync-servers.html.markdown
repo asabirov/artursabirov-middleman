@@ -19,7 +19,7 @@ date: 2011-10-19
 
 app.ru
 
-```
+~~~
 require "rubygems"
 require "bundler"
 Bundler.require
@@ -46,14 +46,14 @@ routes = HttpRouter.new do
 end
 run routes
 
-```
+~~~
 
 Запуск приложения
 
-```
+~~~
 bundle exec thin --timeout 0 -R app.ru start
 
-```
+~~~
 
 ### Goliath
 
@@ -77,7 +77,7 @@ bundle exec thin --timeout 0 -R app.ru start
 Пример приложения с использованием Faye (app.js):
 
 
-```javascript
+~~~javascript
 var Faye   = require('faye'),
     server = new Faye.NodeAdapter({mount: '/live'});
 
@@ -95,11 +95,11 @@ client.publish('/messages', {
   text: 'Hello world'
 });
 
-```
+~~~
 
 Запуск:
 
-```forever app.js```
+~~~forever app.js~~~
 
 
 ### Erlang
@@ -121,17 +121,17 @@ client.publish('/messages', {
 
 Сам Nginx не умеет маршрутизировать websocket'ы и http на одном хосте. В этом поможет HAProxy — очень простой и производительный proxy-сервер.
 
-```
+~~~
 wget http://haproxy.1wt.eu/download/1.4/src/haproxy-1.4.18.tar.gz
 tar zxvf http://haproxy.1wt.eu/download/1.4/src/haproxy-1.4.18.tar.gz
 mv haproxy-1.4.18 /usr/local/haproxy
 ln -s /usr/local/haproxy/haproxy /usr/sbin/haproxy
 
-```
+~~~
 
 Скрипт автозапуска для CentOS:
 
-```bash
+~~~bash
 # description: HA-Proxy is a TCP/HTTP reverse proxy which is particularly suited \
 #              for high availability environments.
 # processname: haproxy
@@ -235,18 +235,18 @@ esac
 
 exit $RETVAL
 
-```
+~~~
 
-```
+~~~
 chkconfig haproxy on
 
-```
+~~~
 
 Настроим конфигурацию для адреса 85.17.162.170. Nginx будет 8081 порту, Node.JS на 9292. Вместо Node.JS может быть любой бэкэнд, конфиг от этого не сильно изменится.
 
 /etc/haproxy.conf
 
-```
+~~~
 global
     maxconn	4096
     spread-checks 5
@@ -286,16 +286,16 @@ backend nginx_backend
     timeout server 25s
     server server1 85.17.162.170:8081 check
 
-```
+~~~
 
 Необходимо убедиться, что Nginx больше не прослушивает 80й порт и в конфигах стоит "listen 85.17.162.92:8081".
 
 Запуск.
 
-```
+~~~
 service haproxy start
 
-```
+~~~
 
 
 ### Frontend
@@ -304,21 +304,21 @@ service haproxy start
 
 Подключаем faye.js. 
 
-```html
+~~~html
 <script type="text/javascript" src="http://domain.com/faye.js"></script>
-```
+~~~
 
 Этот файл генерируется самим faye.
 
 Подключаемся к каналу /messages:
 
-```html
+~~~html
 var client = new Faye.Client('http://domain.com/live');
 var subscription = client.subscribe('/messages', function(message) {
     console.log(message)
 });
 
-```
+~~~
 
 
 ### Frontend
@@ -327,21 +327,21 @@ var subscription = client.subscribe('/messages', function(message) {
 
 Подключаем faye.js. 
 
-```html
+~~~html
 <script type="text/javascript" src="http://domain.com/faye.js"></script>
-```
+~~~
 
 Этот файл генерируется самим faye.
 
 Подключаемся к каналу /messages:
 
-```html
+~~~html
 var client = new Faye.Client('http://domain.com/live');
 var subscription = client.subscribe('/messages', function(message) {
     console.log(message)
 });
 
-```
+~~~
 
 
 ### Резюме

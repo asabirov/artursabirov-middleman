@@ -12,7 +12,7 @@ date: 2011-08-09
 
 Самый простой вариант.
 
-```ruby
+~~~ruby
 class CountriesController < ApplicationController
   def index
     @counties = Country.all
@@ -20,17 +20,17 @@ class CountriesController < ApplicationController
       format.json render :partial => "countries/index.json"
   end
 end
-```
+~~~
 
 
-```ruby
+~~~ruby
 <%- @countries.each do |country|%>
 {
     'name': '<%= country.long_name %>',
     'code': '<%= country.code %>'
 }
 <% end -%>
-```
+~~~
 
 Выбор старообрядцев.
 
@@ -40,20 +40,20 @@ end
 Самый популярный на github.
 
 
-```ruby
+~~~ruby
 gem "json_builder"
-```
+~~~
 
-```ruby
+~~~ruby
 collection @posts
 attributes :id, :title, :subject
 child(:user) { attributes :full_name }
 node(:read) { |post| post.read_by?(@user) }
-```
+~~~
 
 http://localhost:3000/posts.json
 
-```json
+~~~json
 [{  post :
   {
     id : 5, title: "...", subject: "...",
@@ -61,7 +61,7 @@ http://localhost:3000/posts.json
     read : true
   }
 }]
-```
+~~~
 
 Rabl легко интегрируется в Sinatra и Padrino.
 
@@ -73,13 +73,13 @@ Rabl легко интегрируется в Sinatra и Padrino.
 Второй по популярности.
 
 
-```
+~~~
 gem "json_builder"
-```
+~~~
 
 <br />
 
-```ruby
+~~~ruby
 class PostsController < ApplicationController
   respond_to :json
   
@@ -88,10 +88,10 @@ class PostsController < ApplicationController
     respond_with @posts
   end
 end
-```
+~~~
 
 
-```ruby
+~~~ruby
 json.posts do
   json.array! @posts do
     @posts.each do |user|
@@ -101,12 +101,12 @@ json.posts do
     end
   end
 end
-```
+~~~
 
 
 http://localhost:3000/posts.json
 
-```json
+~~~json
 {
   [posts]()
 [
@@ -122,7 +122,7 @@ http://localhost:3000/posts.json
   ]
 }
 
-```
+~~~
 
 Разработчик отмечает отличную скорость генерации. Только вот низкоуровневая работа с типами совсем не вызывает восторга.
 
@@ -135,22 +135,22 @@ http://localhost:3000/posts.json
 Совсем новый проект, стремительно набирающий популярность.
 
 
-```ruby
+~~~ruby
 gem "jsonify-rails"
-```
+~~~
 
 
-```ruby
+~~~ruby
 json.post do
   json.title @post.title
   json.body_plain @post.body_plain
   json.body_html @post.body
 end
-```
+~~~
 
 http://localhost:3000/posts.json
 
-```json
+~~~json
 {
     post :{
         title: "...",
@@ -158,7 +158,7 @@ http://localhost:3000/posts.json
         body_html: ""
     }
 }
-```
+~~~
 
 [https://github.com/bsiggelkow/jsonify](https://github.com/bsiggelkow/jsonify)
 

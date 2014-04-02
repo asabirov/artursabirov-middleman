@@ -12,16 +12,16 @@ Sdoc — генератор статической документации с �
 
 По сути является оберткой над стандартным rdoc. Что гарантирует полную поддержку [стандартного синтаксиса](http://rdoc.sourceforge.net/doc/.)
 
-```
+~~~
 gem "rake", "0.8.7" 
 
-```
+~~~
 
 Добавляем задачу для rake в Rails:
 
 lib/tasks/sdoc.rake
 
-```ruby
+~~~ruby
 # Rakefile
 require 'sdoc'
 Rake::RDocTask.new do |rdoc|
@@ -30,18 +30,18 @@ Rake::RDocTask.new do |rdoc|
   rdoc.template = 'direct' # lighter template used on railsapi.com
 end
 
-```
+~~~
 
-```
+~~~
 bundle exec rake sdoc
-```
+~~~
 
 Либо вручную:
 
-```
+~~~
 bundle exec sdoc -o doc -T direct ./
 
-```
+~~~
 
 
 ### Утилита sdoc-merge
@@ -50,10 +50,10 @@ bundle exec sdoc -o doc -T direct ./
 
 Для примера склейка Ruby и Rails:
 
-```
+~~~
 sdoc-merge --title "Ruby v1.9, Rails v2.3.2.1" --op merged --names "Ruby,Rails" ruby-v1.9 rails-v2.3.2.1
 
-```
+~~~
 
 
 ### Ссылки

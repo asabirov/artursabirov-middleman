@@ -19,32 +19,32 @@ date: 2013-01-22
 
 И прописываем в конфиге xdebug:
 
-```
+~~~
 xdebug.file_link_format = "javascript: var r = new XMLHttpRequest; r.open(\"get\", \"http://localhost:8091?message=%f:%l\");r.send()"
 
-```
+~~~
 
 
 ### RubyMine и Rails Footnotes
 
 В Gemfile.rb:
 
-```ruby
+~~~ruby
 gem 'rails-footnotes', '>= 3.7.9', :group => :development
-```
+~~~
 
 $ rails generate rails_footnotes:install
 
 Добавляем фильтр в config/initializers/rails_footnotes.rb:
 
-```ruby
+~~~ruby
 if defined?(Footnotes) && Rails.env.development?
   Footnotes.run! 
 
   Footnotes::Filter.prefix = "javascript: var r = new XMLHttpRequest; r.open('get', 'http://localhost:8091?message=%s:%d:%d');r.send()"
 end
 
-```
+~~~
 
 ![](/dev/2013-01-22-connect-xdebug-backtrace-with-phpstorm-and-foornotes-with-rubymine/footnotes.png)
 
