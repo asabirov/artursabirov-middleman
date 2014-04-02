@@ -131,8 +131,9 @@ set :markdown, :fenced_code_blocks => true, :smartypants => true
 
 activate :autoprefixer
 activate :directory_indexes
+activate :livereload
+
 # activate :automatic_image_sizes
-# activate :livereload
 
 # compass_config do |config|
 #   config.output_style = :compact
