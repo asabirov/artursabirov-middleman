@@ -118,6 +118,10 @@ helpers do
   rescue RuntimeError
     "http://feeds.feedburner.com/artursabirov"
   end
+
+  def relative_paths_to_absolute(body)
+    body.gsub(/<(img|a)(.*?)(href|src)="(.*?)"/, "<\\1\\2\\3=\"#{root_url}\\4\"")
+  end
 end
 
 set :css_dir, 'stylesheets'
