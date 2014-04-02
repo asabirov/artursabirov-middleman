@@ -1,0 +1,11 @@
+- wrap_layout :layout do
+  %h1= current_article.title
+  = yield
+
+
+  %h4.meta
+    .tags
+      - current_article.tags.each do |tag|
+        = link_to tag, tag_path(tag)
+
+  = partial "shared/disqus"

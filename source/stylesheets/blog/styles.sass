@@ -1,0 +1,267 @@
+body
+  color: black
+  font-family: Georgia,Times New Roman
+  font-weight: 300
+  font-size: medium/1.5em
+  line-height: 1.4em
+  padding: 0px
+  margin: 0px
+
+header
+  display: block
+  background: #222
+  position: relative
+  overflow: hidden
+
+  section
+    padding: 10px 10px
+    width: 1000px
+    max-width: 100%
+    margin: 0 auto
+    overflow: hidden
+
+  h1
+    width: 272px
+    float: left
+    margin: 0
+    font-size: 1.3em
+    color: #fff
+
+  a, a:visited
+    color: #FFF
+
+  nav
+    float: left
+    padding-top: 2px
+
+    a
+      float: left
+      color: #fff
+      display: block
+      margin: 0 20px 0 0
+
+body > section
+  position: relative
+  max-width: 100%
+  min-height: 400px
+
+article
+  display: block
+  position: relative
+
+  @media (max-width: 600px)
+    width: 100%
+
+  img
+    max-width: 100%
+
+aside
+  float: right
+  text-align: right
+  width: 23%
+  font-size: .9em
+  line-height: 1.3em
+  padding-right: 10px
+
+  @media (max-width: 600px)
+    display: none
+
+#two-columns
+  width: 1020px
+  margin: 30px auto 0
+
+  article
+    float: left
+    width: 70%
+    padding: 0 0 0 10px
+
+
+#single-column
+  width: 700px
+  margin: 0 auto
+
+
+article
+  font-family: Georgia, Cambria,"Times New Roman",Times,serif
+  font-size: 20px
+  font-style: normal
+  font-weight: 400
+  letter-spacing: 0.01rem
+  line-height: 1.5
+
+  h1, h2, h3, h4, h5
+    color: #333333
+    font-style: normal
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva
+    font-weight: 700
+
+  h1
+    font-size: 40px
+    letter-spacing: -0.04em
+    line-height: 1.1
+    margin-bottom: 20px
+  h2
+    font-size: 30px
+    letter-spacing: -0.02em
+    line-height: 1.2
+    margin-bottom: 2px
+
+  h3
+    font-size: 25px
+    letter-spacing: -0.02em
+    line-height: 1.2
+    margin-bottom: 2px
+
+  p, blockquote, pre
+    padding: 0px
+    margin: 0 0 30px 0
+
+  strong
+    color: #333333
+
+  blockquote
+    padding: 4px 10px 4px 10px
+    margin-left: 0
+    background: #EAE3B2
+    font-size: .9em
+
+  ul, ol
+    margin: 0
+    padding: 0
+    list-style: none
+    counter-reset: post
+    margin-bottom: 30px
+
+  li:before
+    box-sizing: border-box
+    display: inline-block
+    margin-left: -58px
+    margin-top: -2px
+    position: absolute
+    text-align: right
+    width: 58px
+
+  ol > li:before
+    content: counter(post, decimal) "."
+    counter-increment: post
+    padding-right: 12px
+
+  ul li:before
+    font-family: verdana
+    content: "•"
+    font-size: 14.3px
+    padding-right: 15px
+    padding-top: 6px
+
+  li
+    margin-bottom: 12px
+    margin-left: 30px
+    padding-top: 2px
+
+  li:last-child
+    margin-bottom: 0
+
+  h2 + ul, h3 + ul, h2 + ol, h3 + ol
+    margin-top: 10px
+
+  img
+    max-width: 100%
+
+
+/* Links
+
+a
+  color: #4287a7
+  text-decoration: none
+
+small a, label a, a:hover
+  text-decoration: underline
+
+.follow-me
+  margin: .6em 0 1em 0
+
+
+.separator
+  height: 1px
+  margin-top: 5px
+  clear: both
+
+.tags
+  p
+    margin: 0.4em 0
+
+/* Forms
+
+label
+  margin-left: 1em
+
+textarea, select
+  font: normal 12px verdana, arial, helvetica, sans-serif
+
+textarea
+  width: 500px
+
+#project_summary, #new_comment textarea, #edit_comment textarea
+  height: 150px
+
+.alt, .container_alt
+  background-color: #fafafa
+
+.date
+  color: #666
+  font-size: .8em
+  margin: 0.5em 0 1em 0
+
+#disqus_thread
+  margin-top: 20px
+
+#twitter_update_list
+  li
+    margin-top: 12px !important
+
+div
+  &.errors
+    border: solid 1px red
+    background-color: #ffcccc
+    padding: 5px
+    padding-left: 10px
+    width: 485px
+    h3
+      font-size: 1.0em
+
+.fieldWithErrors
+  display: inline
+
+span.error
+  font-weight: bold
+
+hr
+  border-top: dotted 1px black
+  border-bottom: none
+  height: 1px
+
+#preview
+  height: 200px
+  overflow: auto
+
+/* Syntax
+
+/* TOC
+
+fieldset.toc
+  float: right
+  border: dotted 1px black
+  background-color: #fafafa
+  padding: 10px
+  margin-left: 5px
+
+.toc
+  legend
+    font-weight: bold
+  ol
+    margin: 0px
+    padding-left: 0px
+    list-style-position: inside
+    ol
+      list-style-type: lower-alpha
+      padding-left: 15px

@@ -1,0 +1,11 @@
+!!!
+%html{dir: "ltr", lang: "ru-RU"}
+  = partial "shared/head"
+  %body
+    = partial "shared/header"
+
+    %section#single-column
+      %article
+        = yield
+
+    = partial "shared/js"

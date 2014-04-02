@@ -1,0 +1,11 @@
+---
+pageable: true
+per_page: 12
+---
+
+- wrap_layout :layout do
+
+  %h3 Записи с меткой «#{tagname}»
+
+  = partial "shared/articles_list"
+
