@@ -13,7 +13,7 @@ task :middleman_build do
 end
 
 task :update_build_repo do
-  system "cd build && git commit -a -m 'build auto update' && git push origin master"
+  system "cd build && git add -A && git commit -m build_auto_update && git push origin master"
 end
 
 
