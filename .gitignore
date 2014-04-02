@@ -5,6 +5,5 @@ build
 old
 .idea
 .cache
-public/images/example_output.png
-public/images/logo.png
 public
+tmp
