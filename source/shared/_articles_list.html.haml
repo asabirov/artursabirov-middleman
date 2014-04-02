@@ -6,8 +6,9 @@
 
         .announce= article.metadata[:page]['announce']
 
-        %span.comments
-          =link_to  "Нет комментариев", "#{disqus_url(article)}#disqus_thread", class: old_article?(article) && "old"
+        - if show_comments
+          %span.comments
+            =link_to  "нет комментариев", "#{disqus_url(article)}#disqus_thread", class: old_article?(article) && "old"
       .date
         = Russian::strftime(article.date, '%d %b %Y')
 
