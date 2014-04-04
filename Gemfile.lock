@@ -4,6 +4,15 @@ GIT
   specs:
     russian (0.2.7)
 
+GIT
+  remote: git://github.com/asabirov/yspell.git
+  revision: 6e4bc2ff93c74af34a5e913e9303600050eebd60
+  specs:
+    yspell (0.1.1)
+      httpclient
+      multi_json
+      rainbow (>= 2.0.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -48,6 +57,7 @@ GEM
       tilt
     hike (1.2.3)
     http_parser.rb (0.5.3)
+    httpclient (2.3.4.1)
     i18n (0.6.9)
     json (1.8.1)
     kramdown (1.3.3)
@@ -105,6 +115,7 @@ GEM
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
+    rainbow (2.0.0)
     rake (10.2.2)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.3)
@@ -158,3 +169,4 @@ DEPENDENCIES
   middleman-livereload (~> 3.1.0)
   middleman-syntax
   russian!
+  yspell!

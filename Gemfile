@@ -9,9 +9,11 @@ gem "middleman-alias"
 
 gem "kramdown"
 gem "middleman-autoprefixer"
-gem "russian", :git => "git://github.com/Undev/russian.git"
+gem "russian", git: "git://github.com/Undev/russian.git"
 
 gem "capistrano", "~> 3"
 gem "capistrano-rvm"
 gem "capistrano-nc"
 gem "capistrano-composer"
+
+gem "yspell", git: "git://github.com/asabirov/yspell.git"
