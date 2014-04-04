@@ -1,0 +1,62 @@
+---
+title: YSpell
+announce: Написал консольную утилиту для проверки орфографии
+alias: yspell
+date: 2014-04-04 07:13 MSK
+tags: ruby
+---
+
+Написал простую утилиту для проверки орфографии в терминале. Проверка файла в yspell выглядит так:
+
+![Проверка файла](/dev/2014-04-04-yspell/yspell.jpg)
+
+Проверка строки:
+
+![Проверка строки](/dev/2014-04-04-yspell/yspell2.jpg)
+
+Тексты проверяются через [Yandex Speller](http://api.yandex.ru/speller/), для русскоязычных текстов он мне он показался лучше, чем ispell, более того не нужно возиться со словарями.
+YSpell можно использовать как консольную утилиту, так и подключить в виде библиотеки.
+
+##Установка
+
+~~~ruby
+gem install yspell
+~~~
+
+Если жe в Gemfile
+
+~~~ruby
+gem 'yspell'
+~~~
+
+##Консольная утилита yspell
+
+~~~bash
+Использование: yspell TEXT [OPTIONS]
+
+Options
+      --file FILE              Путь до файла
+  -l, --language LANG          В каких словарях проверять текст.
+                               Доступны: ru, en и uk (по-умолчанию проверяются в русском и английском, "ru,en")
+  -f, --format FORMAT          Формат проверяемого файла (html или plain)
+  -s, --suggestions POSITION   Где показывать подсказки
+                               inline — рядом, after - после текста, none — не показывать
+  -v, --verbose                Показ процесса проверки
+  -h, --help                   Показ справки
+~~~
+
+##Библиотека YSpell
+
+~~~ruby
+require 'yspell'
+
+client = YSpell::Client.new
+client.check('sme text to chck')
+
+>> [
+    #<YSpell::SpellError::UnknownWord:0x007f92a9156a38 @position=0, @row=0, @column=0, @length=3, @word="sme", @suggestions=["some", "me"], @code=1>,
+    #<YSpell::SpellError::UnknownWord:0x007f92a9156808 @position=13, @row=0, @column=13, @length=4, @word="chck", @suggestions=["check", "chick", "chuck"], @code=1>
+]
+~~~
+
+
