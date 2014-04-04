@@ -6,7 +6,7 @@ date: 2014-04-04 07:13 MSK
 tags: ruby
 ---
 
-На днях собрал простую утилиту для проверки орфографии в прямо терминале. В деле выглядит она так:
+На днях собрал небольшой консольный скрипт для проверки орфографии в терминале. В деле выглядит она так:
 
 ![Проверка файла](/dev/2014-04-04-yspell/yspell.jpg)
 
@@ -14,7 +14,7 @@ tags: ruby
 
 ![Проверка строки](/dev/2014-04-04-yspell/yspell2.jpg)
 
-Тексты проверяются через [Yandex Speller](http://api.yandex.ru/speller/), для русскоязычных текстов он мне он показался лучше, чем ispell, более того не нужно возиться со словарями.
+Тексты проверяются через [Yandex Speller](http://api.yandex.ru/speller/), для русскоязычных текстов он мне он показался лучше, чем ispell, и не нужно возиться с установкой словарями.
 YSpell можно использовать как консольную утилиту, так и подключить в виде библиотеки.
 
 ##Установка
@@ -59,7 +59,9 @@ client.check('sme text to chck')
 ]
 ~~~
 
-## Repo
+## Ссылки
 
-[https://github.com/asabirov/yspell](https://github.com/asabirov/yspell)
+RubyGems — [https://rubygems.org/gems/yspell](https://rubygems.org/gems/yspell)
+
+GitHub — [https://github.com/asabirov/yspell](https://github.com/asabirov/yspell)
 
