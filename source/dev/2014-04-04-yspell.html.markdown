@@ -1,6 +1,6 @@
 ---
 title: YSpell
-announce: Написал консольную утилиту для проверки орфографии
+announce: Написал gem/скрипт для проверки орфографии
 alias: yspell
 date: 2014-04-04 07:13 MSK
 tags: ruby
