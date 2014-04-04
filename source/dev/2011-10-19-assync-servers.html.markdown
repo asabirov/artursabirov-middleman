@@ -10,7 +10,7 @@ date: 2011-10-19
 Если вам нужна асинхронность, то лучше сразу задуматься, нужен ли rails вовсе. На Cramp или Node.js можно без проблем совместить comet-транспорт с обычными http-request'ами. Cramp хорошо сочитается с Sinatra, который недавно обзавелся своей версией [Assets Pipeline](https://github.com/stevehodgkiss/sinatra-asset-pipeline.)
 
 
-### Cramp
+## Cramp
 
 [Cramp](http://cramp.in/.)
 Легкий фреймворк, использует EventMachine и файберсы. Умеет  работать с http, веб-сокетами, flash-сокетами и long-polling-запросами для старых браузеров.
@@ -55,12 +55,12 @@ bundle exec thin --timeout 0 -R app.ru start
 
 ~~~
 
-### Goliath
+## Goliath
 
 Сам я лично с ним не работал, но и упомянуть о нем не мог. Довольно известное решение в узких кругах. Посмотрите обязательно — [https://github.com/postrank-labs/goliath](https://github.com/postrank-labs/goliath.)
 
 
-### Node.js
+## Node.js
 
 Это конечно не ruby-way, зато выбор ноды дает нам некоторое [преимущество в производительности](http://posterous.mclov.in/unscientific-nodejs-vs-cramp-benchmarks.)
 Что будет немаловажным при нагрузках.
@@ -102,14 +102,14 @@ client.publish('/messages', {
 ~~~forever app.js~~~
 
 
-### Erlang
+## Erlang
 
 Сложность языка накладывают свои ограничения по скорости разработки и квалификации, но это лучший выбор если вы ограничены в серверных ресурсах.
 
 Пример работы с веб-сокетами на фреймворке MochiWeb — [https://github.com/RJ/mochiweb-websockets/tree/master/examples/websockets](https://github.com/RJ/mochiweb-websockets/tree/master/examples/websockets)
 
 
-### Склейка 
+## Склейка
 
 Ситуация теперь следующая. Сайт на 80м порту (пусть будет Nginx), real-time сервер на 9292. Чтобы избежать нарушения [same-origin-policy](http://en.wikipedia.org/wiki/Same_origin_policy)
 нам потребуется объединить обе части сервера. 
@@ -117,7 +117,7 @@ client.publish('/messages', {
 Этой проблемы можно было избежать, написав всё на Node.JS или Cramp. О чем говорил в начале статьи.
 
 
-### HAPRoxy
+## HAPRoxy
 
 Сам Nginx не умеет маршрутизировать websocket'ы и http на одном хосте. В этом поможет HAProxy — очень простой и производительный proxy-сервер.
 
@@ -298,7 +298,7 @@ service haproxy start
 ~~~
 
 
-### Frontend
+## Frontend
 
 Рассмотрим на примере с Faye. 
 
@@ -321,7 +321,7 @@ var subscription = client.subscribe('/messages', function(message) {
 ~~~
 
 
-### Frontend
+## Frontend
 
 Рассмотрим на примере с Faye. 
 
@@ -344,6 +344,6 @@ var subscription = client.subscribe('/messages', function(message) {
 ~~~
 
 
-### Резюме
+## Резюме
 
 Real-time приложения требуют особого подхода и далеко не все классические инструменты подходят для этих целей. Ruby хоть умеет создавать треды, обладает реализацией eventmachine и даже облегчает код файберсами, но сильно проигрывает в производительности асинхронным технологиям. В Node.JS и Erlang изначально были продуманы проблемы многозадачности и эффективного использования ресурсов. В real-time приложениях это может быть критически важным фактором.

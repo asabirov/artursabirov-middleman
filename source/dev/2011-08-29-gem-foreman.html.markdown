@@ -8,7 +8,7 @@ date: 2011-08-29
 
 Во время разработки приходится запускать множество процессов: thin, faye, spork, sphinx, node.js. Пр. У каждого проекта своё окружение и переключение между ними занимает не мало времени.  Упростить задачу может Foreman.
 
-### Установка
+## Установка
 
 ~~~bash
 gem install foreman
@@ -25,7 +25,7 @@ resque_sheduler: bundle exec rake resque:scheduler
 
 ~~~
 
-### Использование
+## Использование
 
 Запуск всех разом
 
@@ -41,7 +41,7 @@ foreman start thin, faye
 
 ~~~
 
-### Автозапуск
+## Автозапуск
 
 Генерация скрипта для inittab:
 
@@ -58,13 +58,13 @@ foreman export upstart
 ~~~
 
 
-### Ссылки
+## Ссылки
 
 Документация — [http://ddollar.github.com/foreman/](http://ddollar.github.com/foreman)
 
 Репозиторий — [https://github.com/ddollar/foreman](https://github.com/ddollar/foreman)
 
 
-### Резюме
+## Резюме
 
 Foreman'у не не хватает запуска в фоновом режиме. Чтобы каждый процесс можно было перезапустить не задев остальные. В остальном же со своей задачей прекрасно справляется.

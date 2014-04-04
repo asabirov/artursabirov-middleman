@@ -7,7 +7,7 @@ date: 2011-08-16
 ---
 
 
-### Радио-Т
+## Радио-Т
 
 Проверенный временем, еженедельный развлекательно-новостной подкаст о технологиях, железе и программировании. Лучший в своем жанре.
 
@@ -20,7 +20,7 @@ date: 2011-08-16
 [http://radio-t.com](http://radio-t.com)
 
 
-### Рунетология
+## Рунетология
 
 Интервью со «знаменитостями» российского IT-рынка. 
 
@@ -29,7 +29,7 @@ date: 2011-08-16
 [http://runetologia.podfm.ru/](http://runetologia.podfm.ru)
 
 
-### Рунет сегодня
+## Рунет сегодня
 
 На каждый выпуск приглашаются эксперты для обсуждения последних событий рунета.
 
@@ -38,7 +38,7 @@ date: 2011-08-16
 [http://runet-segodnya.podfm.ru](http://runet-segodnya.podfm.ru)
 
 
-### Безымянный подкаст о Ruby
+## Безымянный подкаст о Ruby
 
 Обсуждение новостей связанных с Ruby и RubyOnRails.
 
@@ -49,7 +49,7 @@ date: 2011-08-16
 [http://ruby.rpod.ru](http://ruby.rpod.ru)
 
 
-### Время новостей
+## Время новостей
 
 Еженедельная новостная программа об IT.
 
@@ -60,7 +60,7 @@ date: 2011-08-16
 [http://timeofnewz.podfm.ru](http://timeofnewz.podfm.ru)
 
 
-### Откровенно про IT карьеризм
+## Откровенно про IT карьеризм
 
 Беседы с менеджерами, тимлидами, коучерами и владельцами IT-компаний.
 
@@ -71,7 +71,7 @@ date: 2011-08-16
 [http://it-career.rpod.ru](http://it-career.rpod.ru)
 
 
-### Study Group Community
+## Study Group Community
 
 Обсуждения на тему гибких методологий, программировании. Довольно хардкорный для обычного прослушивания.
 
@@ -80,14 +80,14 @@ date: 2011-08-16
 [http://sg.rpod.ru](http://sg.rpod.ru)
 
 
-### Подкаст веб-фрилансера.
+## Подкаст веб-фрилансера.
 
 Личные рассуждения о программировании и фрилансе. 
 
 Ведущий Андрей Агаларов, программист-фрилансер из Новосибирска, [блог zeroxor.ru](http://www.zeroxor.ru)
 
 
-### Радио Бермудский Треугольник
+## Радио Бермудский Треугольник
 
 Ежемесячный подкаст 3х бывших программистов о жизни, работе и учебе за границей. 
 
@@ -99,7 +99,7 @@ date: 2011-08-16
 [http://btradio.wordpress.com](http://btradio.wordpress.com)
 
 
-### Витая пара
+## Витая пара
 
 Обсуждение IT-новостей.
 
@@ -110,7 +110,7 @@ date: 2011-08-16
 [http://tp.rpod.ru](http://tp.rpod.ru)
 
 
-### Еженедельный подкаст от Umputun
+## Еженедельный подкаст от Umputun
 
 Разговоры на тему жизни в США. Часто задевается IT-тематика и продукция Apple.
 
@@ -119,7 +119,7 @@ date: 2011-08-16
 [http://podcast.umputun.com](http://podcast.umputun.com)
 
 
-### Америчка
+## Америчка
 
 Отдельный подкаст от Будама. В основном о жизни в США. 
 
@@ -128,7 +128,7 @@ date: 2011-08-16
 [http://americhka.us](http://americhka.us)
 
 
-### The Changelog (en)
+## The Changelog (en)
 
 Самый популярный подкаст среди гиков. Беседы с разработчиками популярных opensource проектов. 
 
@@ -140,7 +140,7 @@ date: 2011-08-16
 [http://changelogshow.com](http://changelogshow.com)
 
 
-### Teach Me To Code (en)
+## Teach Me To Code (en)
 
 Интервью с экспертами. Фриланс, программирование.
 
@@ -150,35 +150,35 @@ date: 2011-08-16
 <br />
 
 
-### This Developer's Life (en)
+## This Developer's Life (en)
 
 Подкаст на темы IT-образования, управления проектами и программировании. 
 
 [http://thisdeveloperslife.com](http://thisdeveloperslife.com)
 
 
-### Software Engineering Radio (en)
+## Software Engineering Radio (en)
 
 Интервью с разработчиками, архитекторами и аналитиками известных IT-компаний.
 
 [http://www.se-radio.net](http://www.se-radio.net)
 
 
-### Ruby5 (en)
+## Ruby5 (en)
 
 Очень короткие и веселые выпуски новостей связанных с ruby. 
 
 [http://ruby5.envylabs.com/episodes](http://ruby5.envylabs.com/episodes)
 
 
-### Founder Talks (en)
+## Founder Talks (en)
 
 Аналог рунетологии. Интервью с владельцами успешных проектов.
 
 [http://5by5.tv/founderstalk/](http://5by5.tv/founderstalk/)
 
 
-### А также
+## А также
 
 [ZFCasts](http://zfcasts.ru)
 — ZendFramefork.

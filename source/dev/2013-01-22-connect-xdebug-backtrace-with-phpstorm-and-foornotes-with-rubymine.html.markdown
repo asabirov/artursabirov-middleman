@@ -6,7 +6,7 @@ tags: продуктивность
 date: 2013-01-22
 ---
 
-### PhpStorm  и Xdebug
+## PhpStorm  и Xdebug
 
 В backtrace'е у XDebug предусмотрен простой переход к нужному файлу и на нужную строку. Только использует он протокол txmt (TextMate), что не пригодно с PhpStorm.
 
@@ -25,7 +25,7 @@ xdebug.file_link_format = "javascript: var r = new XMLHttpRequest; r.open(\"get\
 ~~~
 
 
-### RubyMine и Rails Footnotes
+## RubyMine и Rails Footnotes
 
 В Gemfile.rb:
 
@@ -49,7 +49,7 @@ end
 ![](/dev/2013-01-22-connect-xdebug-backtrace-with-phpstorm-and-foornotes-with-rubymine/footnotes.png)
 
 
-### Ссылки
+## Ссылки
 
 [https://github.com/digidigo/ruby_footprints](https://github.com/digidigo/ruby_footprints)
 

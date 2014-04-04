@@ -6,9 +6,9 @@ GIT
 
 GIT
   remote: git://github.com/asabirov/yspell.git
-  revision: 6e4bc2ff93c74af34a5e913e9303600050eebd60
+  revision: 09eba6e89a28f378d8d9ab4009e5db30391e388e
   specs:
-    yspell (0.1.1)
+    yspell (0.1.2)
       httpclient
       multi_json
       rainbow (>= 2.0.0)

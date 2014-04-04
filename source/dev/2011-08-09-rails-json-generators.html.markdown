@@ -8,7 +8,7 @@ date: 2011-08-09
 
 Сериализация объектов обычное явление в проектах Rails, для этих целей обычно используется сериализатор из ActiveSupport, но для составных контейнеров не очень удобен.
 
-### Нативный ERB
+## Нативный ERB
 
 Самый простой вариант.
 
@@ -35,7 +35,7 @@ end
 Выбор старообрядцев.
 
 
-### RABL
+## RABL
 
 Самый популярный на github.
 
@@ -68,7 +68,7 @@ Rabl легко интегрируется в Sinatra и Padrino.
 [https://github.com/nesquena/rabl](https://github.com/nesquena/rabl)
 
 
-### JSON Builder
+## JSON Builder
 
 Второй по популярности.
 
@@ -130,7 +130,7 @@ http://localhost:3000/posts.json
 [https://github.com/dewski/json_builder](https://github.com/dewski/json_builder)
 
 
-### Jsonify
+## Jsonify
 
 Совсем новый проект, стремительно набирающий популярность.
 
@@ -166,7 +166,7 @@ http://localhost:3000/posts.json
 
 
 
-### Argonaut, Tokamak и Tequila
+## Argonaut, Tokamak и Tequila
 
 Проекты скорее мертвые, чем просто «стабильные». Argonaut и Tokamak не совместимы с Rails 3.1. 
 

@@ -11,7 +11,7 @@ date: 2012-04-08
 
 
 
-### Полезные команды.
+## Полезные команды.
 
 EXPLAIN ANALYZE [sql] — анализ выполненного запроса (используемые ноды, время выполнения, использование индексов).
 
@@ -22,7 +22,7 @@ REINDEX INDEX [index_name] — перестройка индекса.
 REINDEX TABLE [table_name] — перестройка индексов всей таблицы.
 
 
-### Анализаторы логов
+## Анализаторы логов
 
 * [pgFouine](http://pgfouine.projects.postgresql.org/,)
 * [pgsi](http://bucardo.org/wiki/Pgsi,)
@@ -30,7 +30,7 @@ REINDEX TABLE [table_name] — перестройка индексов всей 
 
 pgFouine — наиболее удобный, хоть и требует веб-сервер для запуска.
 
-### Рекомендации по использованию индексов
+## Рекомендации по использованию индексов
 
 Ставьте индексы на поля, по которым происходит поиск или сортировка.
 
@@ -38,7 +38,7 @@ pgFouine — наиболее удобный, хоть и требует веб-
 
 
 
-### Индексы
+## Индексы
 
 B-Tree – индекс по-умолчанию. Подходит для всех типов.
 
@@ -57,7 +57,7 @@ CREATE INDEX index_name ON table_name(column_name varchar_pattern_ops);
 Для других типов: text_pattern_ops, bpchar_pattern_ops, name_pattern_ops.
 
 
-### Составной индекс
+## Составной индекс
 
 При поиске по по двум и более колонкам можно использовать составной индекс:
 
@@ -65,7 +65,7 @@ CREATE INDEX index_name ON table_name(column_name varchar_pattern_ops);
 CREATE INDEX index_name ON table_name(col_1, col_2);
 ~~~
 
-### Частичный индекс
+## Частичный индекс
 
 В случае, если поиск совершается только по какому-то одному значению:
 
@@ -73,7 +73,7 @@ CREATE INDEX index_name ON table_name(col_1, col_2);
 CREATE INDEX index_name ON table name WHERE column_name IS value;
 ~~~
 
-### Сортировка индексов
+## Сортировка индексов
 
 При сортировке по индексу в одну сторону, например DESC, можно настроить и сам индекс:
 
@@ -90,7 +90,7 @@ CREATE INDEX index_name ON  table_name(column_name NULLS FIRST);
 По умолчанию значения NULL хранятся в конце.
 
 
-### Обработка значений в индексе
+## Обработка значений в индексе
 
 Если в запросах используются функции:
 
@@ -104,7 +104,7 @@ SELECT * FROM table_name WHERE lower(column_name) = 'x';
 CREATE INDEX index_name ON table_name(lower(column_name)); 
 ~~~
 
-### OFFSET 0
+## OFFSET 0
 
 Использование «OFFSET 0» ускорит выполнение вложенных запросов:
 
@@ -114,7 +114,7 @@ WHERE EXISTS (SELECT * FROM customers JOIN orders USING (customerid) WHERE order
 AND l.orderdate='2004-12-01';
 ~~~
 
-### Ускорение SELECT count(*) 
+## Ускорение SELECT count(*)
 
 В PostgreSQL, в отличии от других БД, медленный подсчет строк.
 
@@ -128,7 +128,7 @@ SELECT count(*)  FROM t;
 SELECT count(*) FROM t WHERE k>10 and k<20;
 ~~~
 
-### FOREIGN KEYS
+## FOREIGN KEYS
 
 Добавление и изменение большого количества данных может оказаться медленным из-за использования внешних ключей (FOREIGN KEYS). Поэтому их можно  приглушить до окончания операции:
 

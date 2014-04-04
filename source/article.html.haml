@@ -1,6 +1,7 @@
 - wrap_layout :layout do
   %h1= current_article.title
-  = yield
+  = preserve do
+    = yield
 
 
   %h4.meta
