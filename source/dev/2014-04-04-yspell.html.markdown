@@ -59,4 +59,7 @@ client.check('sme text to chck')
 ]
 ~~~
 
+## Repo
+
+[https://github.com/asabirov/yspell](https://github.com/asabirov/yspell)
 
