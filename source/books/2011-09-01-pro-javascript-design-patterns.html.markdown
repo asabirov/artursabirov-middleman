@@ -1,7 +1,7 @@
 ---
 title: Pro JavaScript Design Patterns
 alias: pro-javascript-design-patterns
-tags: книги
+tags: Разработка
 date: 2011-09-01
 image: pro_design_js.jpg
 ---

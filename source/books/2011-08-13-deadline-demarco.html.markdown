@@ -1,7 +1,7 @@
 ---
 title: Deadline, Том ДеМарко
 alias: deadline-demarco
-tags: книги
+tags: Управление проектами
 date: 2011-08-13
 image: DeadLine.jpg
 ---
