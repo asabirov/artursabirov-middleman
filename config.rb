@@ -158,7 +158,6 @@ activate :livereload
 #   config.output_style = :compact
 # end
 
-
 configure :build do
   activate :minify_css
   activate :minify_javascript
