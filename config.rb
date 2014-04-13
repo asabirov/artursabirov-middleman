@@ -46,6 +46,18 @@ activate :blog do |blog|
   blog.calendar_template = "calendar.html"
 end
 
+activate :blog do |blog|
+  blog.name = "world"
+  blog.prefix = "world"
+  blog.layout = "article"
+
+  blog.permalink = "{alias}.html"
+
+  blog.tag_template = "tag.html"
+  #blog.calendar_template = "calendar.html"
+end
+
+
 page "/feed.xml", layout: false
 
 
