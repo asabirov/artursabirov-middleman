@@ -3,6 +3,6 @@ articles = articles.sort_by {|a| a.date}.reverse.take(feed_limit)
 
 xml << partial("shared/feed", locals: {
   title: 'Все разделы',
-  articles: articles
+  articles: only_published(articles)
 })
 

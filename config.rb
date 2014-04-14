@@ -134,6 +134,10 @@ helpers do
   def relative_paths_to_absolute(body)
     body.gsub(/<(img|a)(.*?)(href|src)="(.*?)"/, "<\\1\\2\\3=\"#{root_url}\\4\"")
   end
+
+  def only_published(articles)
+    articles.select{|a| a.metadata[:page]['published'].nil? || a.metadata[:page]['published']}
+  end
 end
 
 set :css_dir, 'stylesheets'
