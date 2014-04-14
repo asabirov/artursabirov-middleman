@@ -3,7 +3,7 @@ title: The Passionate Programmer
 alias: passionate-programmer
 date: 2014-04-13 00:02 MSK
 tags: Разработка
-image: passionate_programmer.jpg
+image: passionate-programmer.jpg
 ---
 
 Ни для кого не секрет, что полная увлеченность своим делом приносит как успех в карьере, так и удовлетворенность работой. Программирование не является исключением.
