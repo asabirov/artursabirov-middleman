@@ -156,11 +156,12 @@ activate :autoprefixer
 activate :directory_indexes
 activate :livereload
 
-# activate :automatic_image_sizes
-
-# compass_config do |config|
-#   config.output_style = :compact
-# end
+activate :automatic_clowncar,
+         :sizes => {
+             :thumb => 700
+         },
+         :namespace_directory => %w(images/mindmaps),
+         :filetypes => [:jpg, :jpeg, :png]
 
 configure :build do
   activate :minify_css

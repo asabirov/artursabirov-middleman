@@ -15,5 +15,5 @@ image: passionate-programmer.jpg
 
 ## Mindmap
 
-<a href="/images/mindmaps/the-passionate-programmer.jpg" rel="lightbox">![Mindmap](/images/mindmaps/the-passionate-programmer.jpg)</a>
+<a href="/images/mindmaps/the-passionate-programmer.jpg" rel="lightbox">![Mindmap](/images/mindmaps/the-passionate-programmer/the-passionate-programmer-thumb.jpg)</a>
 
