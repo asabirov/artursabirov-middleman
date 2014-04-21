@@ -1,7 +1,7 @@
 ---
 title: Как тестируют в Google
 alias: how-google-tests-software
-date: 2014-04-14 20:25 MSK
+date: 2014-04-20 22:25 MSK
 tags: Разработка
 image: how-google-tests-software.png
 feed_prefix: Книги
