@@ -2,7 +2,7 @@
 title: Взлет и падение третьего рейха
 alias: the-rise-and-fall-of-the-third-reich
 date: 2014-05-03 19:17 MSK
-tags: history
+tags: История
 image: third-reich.jpg
 feed_prefix: Книги
 ---

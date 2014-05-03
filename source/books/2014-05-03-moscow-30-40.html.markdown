@@ -1,7 +1,7 @@
 ---
 title: Повседневная жизнь Москвы в сталинскую эпоху. 1930-1940-е годы
-alias: moscow-1930-1940
-date: 2014-05-03 20:12 MSK
+alias: moscow-30-40
+date: 2014-05-03 19:17 MSK
 tags: История
 feed_prefix: Книги
 image: moscow-1930-1940.jpg
