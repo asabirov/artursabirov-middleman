@@ -1,6 +1,6 @@
 ---
 title: Автоматическое добавление ветки в commit message
-alias: Автоматическое-добавление-ветки-в-commit-message
+alias: append-branch-name-to-commit-message
 announce: Git-hook, который сам подставит название текущий ветки в комментарий коммита
 date: 2014-05-07 15:12 MSK
 tags: git
