@@ -1,7 +1,7 @@
 ---
 title: Nano Workouts
 alias: nano-workouts
-date: 2014-05-14 09:15 MSK
+date: 2014-05-14 08:15 MSK
 tags: Спорт
 image: nano-workouts.jpg
 feed_prefix: Книги
