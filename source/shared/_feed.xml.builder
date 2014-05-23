@@ -7,6 +7,9 @@ xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
 
   articles.each do |article|
     prefix = article.data.feed_prefix ? "[#{article.data.feed_prefix}] " : ''
+    body = with_image(article)
+    body = relative_paths_to_absolute(body)
+
 
     xml.entry do
       xml.title "#{prefix}#{article.title}"
@@ -15,7 +18,7 @@ xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
       xml.published article.date.to_time.iso8601
       xml.updated article.date.to_time.iso8601
       xml.author { xml.name author }
-      xml.content relative_paths_to_absolute(article.body), "type" => "html"
+      xml.content body, "type" => "html"
     end
   end
 end

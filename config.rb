@@ -86,7 +86,11 @@ helpers do
   end
 
   def root_url
-    'http://artursabirov.ru'
+    if development?
+      'http://localhost:4567'
+    else
+      'http://artursabirov.ru'
+    end
   end
 
   def author
@@ -137,6 +141,14 @@ helpers do
 
   def only_published(articles)
     articles.select{|a| a.metadata[:page]['published'].nil? || a.metadata[:page]['published']}
+  end
+
+  def with_image(article)
+    if article.metadata[:page]['image']
+      "<p><img src=\"/images/books/#{article.metadata[:page]['image']}\" height=\"300\" /></p> #{article.body}"
+    else
+      article.body
+    end
   end
 end
 
