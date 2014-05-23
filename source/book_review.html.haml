@@ -1,7 +1,10 @@
 - wrap_layout :layout do
   %section.book-review
     %h1= current_article.title
-    = image_tag "images/books/#{current_article.metadata[:page]['image']}", class: "cover"
-    = yield
+    %a.cover{href: "#{book_covers_dir}/#{current_article.metadata[:page]['image']}", rel: 'lightbox'}
+      = image_tag "#{book_covers_dir}/#{current_article.metadata[:page]['image']}"
+
+    = preserve do
+      = yield
 
     = partial "shared/disqus"

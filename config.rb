@@ -143,9 +143,13 @@ helpers do
     articles.select{|a| a.metadata[:page]['published'].nil? || a.metadata[:page]['published']}
   end
 
+  def book_covers_dir
+    '/images/books'
+  end
+
   def with_image(article)
     if article.metadata[:page]['image']
-      "<p><img src=\"/images/books/#{article.metadata[:page]['image']}\" height=\"300\" /></p> #{article.body}"
+      "<p><img src=\"#{book_covers_dir}/#{article.metadata[:page]['image']}\" height=\"300\" /></p> #{article.body}"
     else
       article.body
     end
