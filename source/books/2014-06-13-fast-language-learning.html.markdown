@@ -1,7 +1,7 @@
 ---
 title: Быстрое изучение иностранного языка от английского до японского
 alias: fast-language-learning
-date: 2014-06-13 10:55 MSK
+date: 2014-06-13 10:15 MSK
 tags: Иностранные языки
 book_prefix: Книги
 image: fast-language-learning.jpg

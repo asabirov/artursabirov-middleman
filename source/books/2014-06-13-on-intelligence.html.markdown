@@ -1,7 +1,7 @@
 ---
 title: Об интеллекте
 alias: on-intelligence
-date: 2014-06-13 10:55 MSK
+date: 2014-06-13 10:25 MSK
 tags: Наука
 book_prefix: Книги
 image: on-intelligence.jpg
