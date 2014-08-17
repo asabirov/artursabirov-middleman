@@ -1,6 +1,6 @@
-role :web, %w{artursabirov.ru}
+role :web, %w{artursabirov.ru:422}
 
-server 'artursabirov.ru', user: 'rails', roles: %w{web}
+server 'artursabirov.ru:422', user: 'delingcity', roles: %w{web}
 
-set :deploy_to, '/var/www/rails/data/artursabirov.ru'
+set :deploy_to, '/var/www/delingcity/data/www/artursabirov.ru'
 set :branch, 'master'

@@ -6,7 +6,7 @@ set :log_level, :debug
 set :keep_releases, 3
 
 set :rvm_type, :user
-set :rvm_ruby_version, 'ruby-1.9.3-p484'
+set :rvm_ruby_version, 'ruby-1.9.3'
 
 task :middleman_build do
   system "middleman build"
