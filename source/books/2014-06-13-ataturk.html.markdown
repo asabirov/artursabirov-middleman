@@ -3,8 +3,8 @@ title: Ататюрк
 alias: ataturk
 date: 2014-06-13 09:54 MSK
 tags: История
-book_prefix: Книги
 image: ataturk.jpg
+category_name: Книги
 ---
 
 

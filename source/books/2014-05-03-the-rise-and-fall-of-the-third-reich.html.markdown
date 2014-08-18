@@ -4,7 +4,7 @@ alias: the-rise-and-fall-of-the-third-reich
 date: 2014-05-03 19:17 MSK
 tags: История
 image: third-reich.jpg
-feed_prefix: Книги
+category_name: Книги
 ---
 
 

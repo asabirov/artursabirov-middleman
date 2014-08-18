@@ -143,6 +143,11 @@ helpers do
     articles.select{|a| a.metadata[:page]['published'].nil? || a.metadata[:page]['published']}
   end
 
+  def articles_for_home
+    articles = blog_instances.map{|blog| blog.last.data.articles}.flatten
+    articles.sort_by {|a| a.date}.reverse
+  end
+
   def book_covers_dir
     '/images/books'
   end

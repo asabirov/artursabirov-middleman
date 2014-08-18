@@ -4,7 +4,7 @@ alias: testing-backbone-js
 date: 2014-05-29 10:03 MSK
 tags: Разработка
 image: testing-backbone-js.jpg
-feed_prefix: Книги
+category_name: Книги
 ---
 
 Хорошая книжка, если вы не знаете с чего начать тестирование приложений Backbone.js.

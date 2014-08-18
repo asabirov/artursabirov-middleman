@@ -4,7 +4,7 @@ alias: america
 date: 2014-05-23 12:00 MSK
 tags: Публицистика
 image: america.jpg
-feed_prefix: Книги
+category_name: Книги
 ---
 
 

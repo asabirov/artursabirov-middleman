@@ -3,7 +3,7 @@ title: CoffeScript Application Development
 alias: coffescript-application-development
 date: 2014-05-16 18:01 MSK
 tags: Разработка
-book_prefix: Книги
+category_name: Книги
 image: coffeescript.jpg
 published: true
 ---

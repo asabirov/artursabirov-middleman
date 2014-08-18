@@ -3,7 +3,7 @@ title: Growing Rails Applications in Practice
 alias: growing-rails-application-in-practice
 date: 2014-08-17 19:06 MSK
 tags: Разработка, Rails
-book_prefix: Книги
+category_name: Книги
 image: growing-rails-application-in-practice.png
 ---
 

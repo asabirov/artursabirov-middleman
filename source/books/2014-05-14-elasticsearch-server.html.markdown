@@ -3,7 +3,7 @@ title: ElasticSearch Server
 alias: elasticsearch-server
 date: 2014-05-14 18:00 MSK
 tags: Разработка
-feed_prefix: Книги
+category_name: Книги
 image: elasticsearch-server.jpg
 ---
 

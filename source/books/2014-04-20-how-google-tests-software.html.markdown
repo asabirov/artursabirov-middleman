@@ -4,7 +4,7 @@ alias: how-google-tests-software
 date: 2014-04-20 22:25 MSK
 tags: Разработка
 image: how-google-tests-software.png
-feed_prefix: Книги
+category_name: Книги
 ---
 
 Не смотря на свои масштабы (в компании работает [49 тыс. человек](http://investor.google.com/financial/tables.html))

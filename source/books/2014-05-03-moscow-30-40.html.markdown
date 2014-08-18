@@ -3,7 +3,7 @@ title: Повседневная жизнь Москвы в сталинскую 
 alias: moscow-30-40
 date: 2014-05-03 19:17 MSK
 tags: История
-feed_prefix: Книги
+category_name: Книги
 image: moscow-1930-1940.jpg
 ---
 

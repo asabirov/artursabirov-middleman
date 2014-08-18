@@ -6,7 +6,7 @@ xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
   xml.author { xml.name author }
 
   articles.each do |article|
-    prefix = article.data.feed_prefix ? "[#{article.data.feed_prefix}] " : ''
+    prefix = article.data.category_name ? "#{article.data.category_name}: " : ''
     body = with_image(article)
     body = relative_paths_to_absolute(body)
 

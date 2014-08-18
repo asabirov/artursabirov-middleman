@@ -3,8 +3,8 @@ title: Mastering Nginx
 alias: mastering-nginx
 date: 2014-05-23 13:47 MSK
 tags: Инструменты
-feed_prefix: Книги
 image: mastering-nginx.jpg
+category_name: Книги
 ---
 
 
