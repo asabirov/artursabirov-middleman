@@ -101,14 +101,6 @@ helpers do
     'artsabirov'
   end
 
-  def disqus_url(article)
-    if old_article?(article)
-      "#{root_url}/#{article.url.gsub('/dev', '').gsub(/\/$/, '')}"
-    else
-      "#{root_url}#{article.url}"
-    end
-  end
-
   def old_article?(article)
     article.url =~ /201[1-2]/
   end
