@@ -110,15 +110,16 @@ helpers do
   end
 
   def current_title
+    blog_name = "Блог Артура Сабирова"
     if current_article
-      return current_article.title
+      return "#{current_article.title} — #{blog_name}"
     end
 
     if current_resource && current_resource.metadata && current_resource.metadata[:page]['title']
-      return current_resource.metadata[:page]['title']
+      return "#{current_resource.metadata[:page]['title']} — #{blog_name}"
     end
 
-    "ArturSabirov.ru"
+    blog_name
   end
 
   def current_feed_path
