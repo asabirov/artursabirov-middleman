@@ -6,5 +6,5 @@
 
         .announce= article.data.announce
       .date
-        = Russian::strftime(article.date, '%d %b %Y')
+        = I18n.l(article.date, format: '%d %B %Y')
 

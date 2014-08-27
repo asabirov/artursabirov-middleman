@@ -5,6 +5,7 @@
 
 
   %h4.meta
+    = I18n.l(current_article.date, format: '%d %B %Y')
     .tags
       - current_article.tags.each do |tag|
         = link_to tag, tag_path(tag)
