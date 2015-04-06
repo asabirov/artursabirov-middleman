@@ -1,4 +1,4 @@
-lock '3.2.0'
+lock '3.4.0'
 
 set :application, 'ArturSabirov.ru'
 set :repo_url, 'git@github.com:asabirov/artursabirov-build.git'
