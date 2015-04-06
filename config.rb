@@ -80,8 +80,6 @@ end
 
 activate :syntax
 
-Russian.init_i18n
-
 helpers do
   def blog_title
     "Артур Сабиров"
