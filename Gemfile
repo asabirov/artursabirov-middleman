@@ -6,7 +6,6 @@ gem "middleman-livereload"
 gem "middleman-blog"
 gem "middleman-syntax"
 gem "middleman-alias"
-gem "middleman-automatic-clowncar", branch: "sprocket-decollision"
 gem "middleman-autoprefixer"
 
 gem "kramdown"

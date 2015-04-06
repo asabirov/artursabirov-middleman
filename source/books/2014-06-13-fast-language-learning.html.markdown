@@ -21,6 +21,6 @@ category_name: Книги
 Например, в качестве учебных материалов используются видео, аудио-курсы, сериалы, фильмы, подкасты — на этом, например, базируется обучение в сервисе lingualeo.
 Книга поможет систематизировать занятия.
 
-<a href="/images/mindmaps/fast-language-learning.png">![Mindmap](/images/mindmaps/fast-language-learning/fast-language-learning-thumb.png)</a>
+<a href="/images/mindmaps/fast-language-learning.png">![Mindmap](/images/mindmaps/fast-language-learning.png)</a>
 
 

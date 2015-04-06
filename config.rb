@@ -169,13 +169,6 @@ activate :autoprefixer
 activate :directory_indexes
 activate :livereload
 
-activate :automatic_clowncar,
-         :sizes => {
-             :thumb => 700
-         },
-         :namespace_directory => %w(mindmaps),
-         :filetypes => [:jpg, :jpeg, :png]
-
 configure :build do
   activate :minify_css
   activate :minify_javascript

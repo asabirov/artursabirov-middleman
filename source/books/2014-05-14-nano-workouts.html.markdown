@@ -18,4 +18,4 @@ category_name: Книги
 Именно в эти периоды «нано-упражнения» гармонично вписались, и уже добавил несколько своих.
 
 
-<a href="/images/mindmaps/nano-workouts.png">![Mindmap](/images/mindmaps/nano-workouts/nano-workouts-thumb.png)</a>
+<a href="/images/mindmaps/nano-workouts.png">![Mindmap](/images/mindmaps/nano-workouts.png)</a>

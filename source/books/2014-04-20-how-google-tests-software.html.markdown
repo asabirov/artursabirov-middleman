@@ -41,6 +41,6 @@ Google удается выпускать и развивать огромное 
 
 ##Mindmap
 
-<a href="/images/mindmaps/how-google-tests-software.png">![Mindmap](/images/mindmaps/how-google-tests-software/how-google-tests-software-thumb.png)</a>
+<a href="/images/mindmaps/how-google-tests-software.png">![Mindmap](/images/mindmaps/how-google-tests-software.png)</a>
 
 
