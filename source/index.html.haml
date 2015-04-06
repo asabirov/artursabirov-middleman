@@ -3,7 +3,12 @@ pageable: true
 per_page: 50
 ---
 
+%h3 Разработка
+= partial "shared/articles_list", locals: {articles: articles_for(:dev), show_comments: true}
 
-= partial "shared/articles_list", locals: {articles: articles_for_home, show_comments: true}
-= partial "shared/pagination"
+%h3 Книги
+= partial "shared/articles_list", locals: {articles: articles_for(:books), show_comments: true}
+
+%h3 Разное
+= partial "shared/articles_list", locals: {articles: articles_for(:life), show_comments: true}
 

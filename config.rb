@@ -138,9 +138,8 @@ helpers do
     articles.select{|a| a.metadata[:page]['published'].nil? || a.metadata[:page]['published']}
   end
 
-  def articles_for_home
-    articles = blog_instances.map{|blog| blog.last.data.articles}.flatten
-    articles.sort_by {|a| a.date}.reverse
+  def articles_for(scope, limit = 5)
+    blog_instances[scope].data.articles.sort_by{|a| a.date}.reverse.take(limit)
   end
 
   def book_covers_dir
