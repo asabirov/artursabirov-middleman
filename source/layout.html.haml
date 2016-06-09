@@ -1,12 +1,21 @@
 !!!
-%html{dir: "ltr", lang: "ru-RU"}
+%html
   = partial "shared/head"
   %body
-    = partial "shared/header"
+    %article
+      %section.hello
+        Hi!
+      %section.about
+        My name is Artur Sabirov. I'm a developer and founder of <br />
+        <a href="http://squarefaction.ru">Square Faction</a> and <a href="https://keitarotds.ru">Keitaro</a>.
 
-    %section#single-column
-      %article
-        = yield
 
-      = partial "shared/footer"
-    = partial "shared/js"
+      %section.social
+        You'll find me on
+        <a href="https://ru.linkedin.com/in/asabirov">Linkedin</a>,
+        <a href="https://github.com/asabirov">Github</a>,
+        <a href="https://twitter.com/artsabirov">Twitter</a>,
+        <a href="https://instagram.com/artsabirov">Instagram</a>.
+
+      %section.contacts
+        Or write me <a href="mailto:mail@artursabirov.ru">mail@artursabirov.ru</a>. Thanks.

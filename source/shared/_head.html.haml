@@ -1,26 +1,10 @@
 %head
   %meta{charset: "utf-8"}/
 
-  %title #{current_title}
+  %title Артур Сабиров
 
-  %link{href: "http://feeds.feedburner.com/artursabirov", rel: "alternate", title: "ArturSabirov.ru", type: "application/rss+xml"}/
-  = stylesheet_link_tag 'blog'
+  %link{href: 'http://fonts.googleapis.com/css?family=Arimo', rel: 'stylesheet', type: 'text/css'}/
+
+  = stylesheet_link_tag 'app'
 
   %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
-  %script{charset: "windows-1251", src: "http://vkontakte.ru/js/api/openapi.js?29", type: "text/javascript"}
-  = feed_tag :atom, current_feed_path, title: "Atom Feed"
-
-
-  :javascript
-    VK.init({apiId: 2348265, onlyWidgets: true});
-
-  :javascript
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-24946626-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
